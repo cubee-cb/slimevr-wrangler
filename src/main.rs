@@ -222,8 +222,8 @@ impl MainState {
         let list = list.push(
             container(text(format!(
                 "Searching for Joycon controllers{}\n\
-                    Please pair controllers in the bluetooth \
-                    settings of Windows if they don't show up here.",
+                    Please pair controllers in your system's \
+                    bluetooth settings if they don't show up here.",
                 ".".repeat(self.search_dots)
             )))
             .padding(10),
@@ -475,7 +475,7 @@ fn single_box_view<'a>(
         .push(text(format!("Rotation scale ratio: {scale:.3}")))
         .push(
             text(
-                "Change this if the tracker in vr moves less or more than your irl joycon. Higher value = more movement.",
+                "Change this if the tracker in VR moves less or more than your irl Joycon. Higher value = more movement.",
             )
             .size(14),
         )
