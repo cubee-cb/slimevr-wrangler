@@ -35,12 +35,16 @@ Many! This is a **alpha** version, and there's no guarantees about anything.
 * It stops tracking when I turn around! - Bluetooth does not have a good range, you might have better luck with a different bluetooth adapter.
 * Probably more.
 
-### My Joy-Con's are connected in the Windows bluetooth menu but won't show up!
+### [Windows] My Joy-Con are connected in the bluetooth menu but won't show up!
 
 This is a problem that might be related to a newer Windows update. Try this, and it might fix it:
 * Go to the Windows Setting app -> Bluetooth & other devices.
 * Press on the Joy-Con that won't connect. Press "Remove device".
 * Pair the device again. It should now show up.
+
+### [Linux] "interface 'wl_surface' has no event 2" error in console.
+
+Problem likely related to Iced (the GUI library) running on Wayland, possibly resolved by launching with the ```WINIT_UNIX_BACKEND=x11``` environment variable. Unsure why.
 
 # License
 Licensed under either of <a href="LICENSE-APACHE">Apache License, Version 2.0</a> or <a href="LICENSE-MIT">MIT license</a> at your option.
