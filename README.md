@@ -44,7 +44,8 @@ This is a problem that might be related to a newer Windows update. Try this, and
 
 ### [Linux] "interface 'wl_surface' has no event 2" error in console.
 
-Problem likely related to Iced (the GUI library) running on Wayland, possibly resolved by launching with the ```WINIT_UNIX_BACKEND=x11``` environment variable. Unsure why.
+Problem likely due to running on Wayland, possibly resolved by launching in xWayland mode.
+Use ```WINIT_UNIX_BACKEND=x11``` or ```WAYLAND_DISPLAY=''```, both work in testing.
 
 # License
 Licensed under either of <a href="LICENSE-APACHE">Apache License, Version 2.0</a> or <a href="LICENSE-MIT">MIT license</a> at your option.
